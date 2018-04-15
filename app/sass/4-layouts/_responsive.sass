@@ -1,0 +1,86 @@
+@media (max-width: 740px)
+    header
+        nav
+            .container
+                .logo-holder
+                    width: 100%
+                .features-list
+                    display: none
+    
+@media (max-width: 645px)
+    section.about
+        .about-row
+            flex-direction: column
+            &:nth-child(even)
+                .about-content
+                    order: 0
+            .about-content, .about-img
+                width: 100%
+    section.features
+        .features-list
+            .feature
+                width: 50%
+@media (max-width: 457px)
+    .cta-btn
+        width: 90%
+    h3.heading
+        padding: 0 10px
+    section.customers
+        .customers-list
+            flex-direction: column
+            align-items: center
+            .customer
+                width: 100%
+                margin-bottom: 20px
+    section.user-offers
+        .offers-list
+            height: auto
+            flex-direction: column
+            .offer
+                margin-bottom: 20px
+                width: 50%
+    section.features
+        .features-list
+            .feature
+                width: 100%
+    footer
+        .inner-footer
+            .social
+                .social-links
+                    justify-content: space-around
+                    .footer-logo
+                        width: 100%
+                        text-align: center
+                        margin-bottom: 10px
+                .apps-stors
+                    flex-direction: column
+                    align-items: center
+                    li
+                        margin-right: 0
+                        &:first-child
+                            margin-bottom: 15px
+            .links-container
+                flex-direction: column
+                .links
+                    margin-right: 0      
+                    margin-bottom: 20px   
+@media (max-width: 387px)
+    .cta-btn
+        font-size: 1rem
+
+
+
+
+
+
+
+
+@media (min-width: 768px)
+    .container
+        width: 750px
+@media (min-width: 992px)
+    .container
+        width: 970px
+@media (min-width: 1200px)
+    .container
+        width: 1170px

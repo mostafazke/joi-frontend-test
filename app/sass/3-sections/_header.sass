@@ -1,0 +1,59 @@
+header
+	min-height: 100vh
+	nav
+		height: 150px
+		padding: 30px 0
+		.container
+			height: 100%			
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.logo-holder
+				display: flex
+				align-items: center
+				width: 50%
+				height: 100%
+				.logo
+					height: 100%
+					margin-right: 25px
+					img
+						height: 100%
+				.slogan
+					font-size: 1.2rem
+					p
+						line-height: 1.5
+			.features-list
+				display: flex
+				justify-content: flex-end
+				width: 50%
+				.feature
+					display: flex
+					align-items: center
+					height: 30px
+					margin-right: 15px
+					&:last-child
+						margin-right: 0
+					img
+						width: 50px
+						margin-right: 10px					
+					span
+						font-family: $second-font
+						font-weight: 400
+						font-size: .9rem
+	// Start Header Hero
+	.hero
+		min-height: calc(100vh - 150px)
+		background-image: url(../img/header_bg.jpg)
+		background-size: cover
+		background-position: center center
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		h1
+			font-size: 2.2rem
+			font-weight: normal
+			line-height: 1.4
+			margin-bottom: 70px
+		.cta
+			margin-bottom: 30px

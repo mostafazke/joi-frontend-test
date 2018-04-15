@@ -1,0 +1,20 @@
+// Vendors Imports
+@import '1-vendors/normalize';
+@import '1-vendors/tiny-slider';
+
+// Base Imports
+@import '2-base/vars';
+@import '2-base/base';
+
+// Sections Imports
+@import '3-sections/header';
+@import '3-sections/customers';
+@import '3-sections/user-offers';
+@import '3-sections/about';
+@import '3-sections/features';
+@import '3-sections/products';
+@import '3-sections/inspiration';
+@import '3-sections/footer';
+
+// Layouts Imports
+@import '4-layouts/responsive';
