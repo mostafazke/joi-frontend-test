@@ -27,4 +27,5 @@ html
 		//- Start Footer
 		include ./sections/footer
 		//- End Footer
-		script(src="./assets/js/scripts.js")
+		link(rel="preload" href="assets/css/style.css" as="style" onload="this.rel='stylesheet'")
+		script(async src="./assets/js/scripts.js")

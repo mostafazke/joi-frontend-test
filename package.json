@@ -18,5 +18,8 @@
     "gulp-ruby-sass": "^2.1.1",
     "gulp-typescript": "^3.2.2",
     "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "fg-loadcss": "^2.0.1"
   }
 }

@@ -1,20 +1,27 @@
-## EXPIRES CACHING ##
+# make sure our ssi includes work
+SSILegacyExprParser on
+
+# enabled SSI for .html files
+AddType text/html .html
+AddHandler server-parsed .html
+Options Indexes Includes FollowSymlinks
+
+
+# ----------------------------------------------------------------------
+# | Expires headers                                                    |
+# ----------------------------------------------------------------------
+
+# Serve resources with far-future expires headers.
+#
+# (!) If you don't control versioning with filename-based
+# cache busting, you should consider lowering the cache times
+# to something like one week.
+#
+# https://httpd.apache.org/docs/current/mod/mod_expires.html
+
 <IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 1 year"
-ExpiresByType image/jpeg "access 1 year"
-ExpiresByType image/gif "access 1 year"
-ExpiresByType image/png "access 1 year"
-ExpiresByType text/css "access 1 month"
-ExpiresByType text/html "access 1 month"
-ExpiresByType application/pdf "access 1 month"
-ExpiresByType text/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 month"
-ExpiresByType image/x-icon "access 1 year"
-ExpiresDefault "access 1 month"
+
+    ExpiresActive on
+    ExpiresDefault "access plus 1 minutes"
+
 </IfModule>
-## EXPIRES CACHING ##
-# 1 Month for most static assets
-<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
-Header set Cache-Control "max-age=2592000, public"
-</filesMatch>
