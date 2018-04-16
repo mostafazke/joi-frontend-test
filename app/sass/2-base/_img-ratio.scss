@@ -1,0 +1,84 @@
+.img-ratio {
+    position: relative;
+    overflow: hidden;
+    .ratio {
+        padding-top: 100%;
+        &.header-logo-ratio {
+            padding-top: 88.6%
+        }
+        &.header-img {
+            padding-top: 58%
+        }
+        &.customers-ratio {
+            padding-top: 45.2%
+        }
+        &.offers-ratio {
+            padding-top: 58.3%
+        }
+        &.about-us-ratio,
+        &.inspiration-ratio {
+            padding-top: 66.6%
+        }
+        &.features-one-ratio {
+            padding-top: 175.6%
+        }
+        &.features-tow-ratio {
+            padding-top: 112.6%
+        }
+        &.features-three-ratio {
+            padding-top: 129.2%
+        }
+        &.features-four-ratio {
+            padding-top: 91.76%
+        }
+        &.features-six-ratio {
+            padding-top: 122.9%
+        }
+        &.product-one-ratio {
+            padding-top: 52.94%
+        }
+        &.product-tow-ratio {
+            padding-top: 17.8%
+        }
+        &.product-three-ratio {
+            padding-top: 34.6%
+        }
+        &.product-four-ratio {
+            padding-top: 20.8%
+        }
+        &.product-five-ratio {
+            padding-top: 18.2%
+        }
+        &.product-six-ratio {
+            padding-top: 33.3%
+        }
+        &.product-seven-ratio {
+            padding-top: 23.8%
+        }
+        &.product-eight-ratio {
+            padding-top: 39.8%
+        }
+        &.footer-logo-ratio {
+            padding-top: 84.5%
+        }
+        &.footer-app-ratio {
+            padding-top: 29.1%
+        }
+        &.footer-play-ratio {
+            padding-top: 30.3%
+        }
+    }
+    .ratio-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            min-height: 100%
+        }
+    }
+}
